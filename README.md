@@ -4,7 +4,6 @@ The project is a morse code - character bidirectional translator. It uses the re
 
 To indicate whether the device is translating morse code to characters or characters to morse code, the green LED on the KL board is off or on respectively in either case. The device also uses the UART protocol to display the current mode, characters typed from the USB keyboard and characters translated from morse code. This technically makes the device interfaceable with any bash terminal that has a usb to serial driver installed, however the MCUExpresso debug console is recommended for simplicity.
 
- 
 ### Technical
 
 The system is always initialized to the Morse to Character mode. In this mode, the Dots and Dashes are entered using the SW1 and SW3 buttons that come with the board. Every time a character is completed, the Enter key is pressed on the keyboard, which, in case a valid character was entered in morse, will have the sequence translated to Character, instantly showing it in the Debug Console. Once the word is completed, the Space bar is pressed to allow for a delimiter in the Console output.
