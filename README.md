@@ -12,7 +12,7 @@ Most of the code was created and the existing functions were modified in app.c a
 
 For the implementation of the translator, I used the binary nature of morse code to implement a binary tree that stores all of the characters as their keyboard scan codes, which are then converted to characters using a print function in the usb library. I also used an array to store the morse translation of each character in binary using unsigned integer values.
 
-## In Sources Folder: 
+#### In Sources Folder: 
 host_keyboard.c -> Backbone of Keyboard Operation | read_key (implements bin. tree & unsigned array) & USB_HostKeyboardProcessBuffer (facilitates keyboard to microcontroller data transfer) == main tandem
 
 app.c -> Interrupts' Definitions (for touch, push buttons); Hardware Initialization; MAIN function; M2C Binary Tree
