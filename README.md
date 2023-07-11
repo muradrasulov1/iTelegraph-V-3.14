@@ -15,7 +15,7 @@ For the implementation of the translator, I used the binary nature of morse code
 #### In Sources Folder: 
 host_keyboard.c -> Backbone of Keyboard Operation | read_key (implements bin. tree & unsigned array) & USB_HostKeyboardProcessBuffer (facilitates keyboard to microcontroller data transfer) == main tandem
 
-app.c -> Interrupts' Definitions (for touch, push buttons); Hardware Initialization; MAIN function; M2C Binary Tree
+app.c -> Interrupts' Definitions (for touch, push buttons); Hardware Initialization; MAIN function (While loop mainly responsible for M->C | C->M is done via a single keyboard interrupt once a full message is fed into the buffer | fed message shown on via 2 LEDs all togethet); M2C Binary Tree
 In app.c: SW1, SW2 -> simple push buttons | TSI -> capacitive touch sensor
 
 
